@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductEditorActivity"
+    android:orientation="vertical">
+
+    <!-- Overview category -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/CategoryStyle"
+                        android:text="@string/mobile_model" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edit_mobile_model"
+                            style="@style/EditorFieldStyle"
+                            android:hint="@string/mobile_model"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/CategoryStyle"
+                        android:text="@string/mobile_brand" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <!-- Name field -->
+                        <EditText
+                            android:id="@+id/edit_mobile_brand"
+                            style="@style/EditorFieldStyle"
+                            android:hint="@string/mobile_brand"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/CategoryStyle"
+                        android:text="@string/mobile_color" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <!-- Name field -->
+                        <EditText
+                            android:id="@+id/edit_mobile_color"
+                            style="@style/EditorFieldStyle"
+                            android:hint="@string/mobile_color"
+                            android:inputType="textCapWords" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        <ImageView
+            android:id="@+id/image_view"
+            style="@style/ImageFieldStyle"
+            android:src="@drawable/demo_mobile"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mobile_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/mobile_size" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner_size"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:paddingRight="16dp"
+                android:spinnerMode="dropdown" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_stock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_marginBottom="16dp"
+            android:text="@string/mobile_in_stock" />
+
+
+        <RadioGroup
+            android:id="@+id/stock_boolean"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/in_stock"
+                style="@style/EditorFieldStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:checked="true"
+                android:text="@string/stock_yes" />
+
+            <RadioButton
+                android:id="@+id/out_of_stock"
+                style="@style/EditorFieldStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stock_no" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/no_in_stock" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/minus_button"
+                style="@style/EditorPlusMinusStyle"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/edit_number_stock"
+                style="@style/EditorFieldStyleStock"
+                android:hint="@string/number_of_stock"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/plus_button"
+                style="@style/EditorPlusMinusStyle"
+                android:text="+" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/restock_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/restock" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/restock"
+                style="@style/EditorFieldStyleStock"
+                android:layout_weight="2"
+                android:hint="@string/restock"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/restock_button"
+                style="@style/EditorButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/restock_stocked"
+                android:textAllCaps="true" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/container_measurement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:text="@string/mobile_price" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:paddingLeft="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/label_price_units"
+                style="@style/EditorUnitsStyle"
+                android:layout_marginEnd="-1dp"
+                android:layout_marginRight="-1dp"
+                android:text="@string/price_unit" />
+
+            <EditText
+                android:id="@+id/edit_price"
+                style="@style/EditorFieldStyle"
+                android:hint="@string/price"
+                android:inputType="numberDecimal" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

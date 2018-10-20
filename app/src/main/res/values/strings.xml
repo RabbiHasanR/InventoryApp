@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+
+    <!-- Title text for the empty view, which describes the empty dog house image [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">It\'s a bit lonely here...</string>
+
+    <!-- Subtitle text for the empty view that prompts the user to add a pet [CHAR LIMIT=50] -->
+    <string name="empty_view_subtitle_text">Get started by adding a product</string>
+    <string name="action_order">Order</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save</string>
+    <string name="action_demo_product">Insert demo product</string>
+    <string name="action_delete_all">Delete All</string>
+    <string name="editor_insert_product_failed">Insert Product Fail</string>
+    <string name="editor_insert_product_success">Insert Product successful</string>
+    <string name="mobile_model">Model</string>
+    <string name="mobile_brand">Brand</string>
+    <string name="mobile_color">Color</string>
+    <string name="mobile_size">Size</string>
+    <string name="mobile_in_stock">In stock</string>
+    <string name="stock_yes">Yes</string>
+    <string name="stock_no">No</string>
+    <string name="no_in_stock">No. In stock</string>
+    <string name="number_of_stock">0</string>
+    <string name="mobile_price">price</string>
+    <string name="restock">Restock</string>
+    <string name="restock_stocked">stocked</string>
+    <string name="price_unit">$</string>
+    <string name="price">7.00</string>
+    <string name="sale_button">Sale</string>
+    <string name="size_small">Small</string>
+    <string name="size_medium">Medium</string>
+    <string name="size_large">Large</string>
+
+    <string name="error_model_required">Please enter model name</string>
+    <string name="error_brand_required">Please enter brand name</string>
+    <string name="error_colour_required">Please enter the colour</string>
+    <string name="error_size_required">Please select size</string>
+    <string name="error_stock_required">Please select if item is in stock</string>
+    <string name="error_stock_level">Please enter number held in stock</string>
+    <string name="error_restock">Please enter restock amount</string>
+    <string name="error_price_required">Please enter unit price</string>
+    <string name="prompt_missing">Missing data in fields</string>
+    <string name="prompt_no_change">No changes have been made</string>
+    <string name="prompt_error_saved">Error saving data</string>
+    <string name="prompt_not_saved">Entry not saved</string>
+    <string name="prompt_save_successful">Product saved successfully</string>
+    <string name="delete_all">Delete all data</string>
+    <string name="delete_prompt">Are you sure you want to delete?</string>
+    <string name="cancel">Cancel</string>
+    <string name="editor_activity_title_new_product">Add New Product</string>
+    <string name="editor_activity_title_edit_product">Edit Product</string>
+    <string name="delete">Delete</string>
+    <string name="error_delete">Error deleting product</string>
+    <string name="delete_success">Product deleted</string>
+    <string name="unsaved">Are you sure you want to leave this screen?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep editing</string>
+    <string name="model">Model</string>
+    <string name="brand">Brand</string>
+    <string name="colour">Colour</string>
+    <string name="size">Size</string>
+    <string name="restock_amount">Restock amount</string>
+    <string name="prompt_save_send">Would you like to save any changes and send the restock email?</string>
+    <string name="positive_save_send">Save and send</string>
+    <string name="stocked">Stocked</string>
+
+
+    <string name="in_stock">IN STOCK</string>
+    <string name="not_in_stock">Not in stock</string>
+    <string name="in_stock_display"> in stock</string>
+    <string name="action_exit">Exit</string>
+    <string name="exit_message">Do you want to close the app!!</string>
+    <string name="exit_yes">Yes</string>
+    <string name="exit_no">No</string>
+
+    <string-array name="size_array">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+</resources>
